@@ -1,0 +1,28 @@
+name: EventDiff
+
+on:
+  pull_request:
+    paths:
+      - "schemas/**.json"
+
+jobs:
+  eventdiff:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install CLI deps
+        working-directory: cli
+        run: npm install
+
+      - name: Run EventDiff
+        working-directory: cli
+        run: node eventdiff.mjs --base=${{ github.event.pull_request.base.sha }} --head=${{ github.event.pull_request.head.sha }} --dir=schemas

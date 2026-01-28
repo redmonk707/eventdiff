@@ -1,0 +1,9 @@
+{
+  "name": "eventdiff-cli",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "eventdiff": "node eventdiff.mjs"
+  }
+}
