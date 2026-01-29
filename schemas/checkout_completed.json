@@ -5,7 +5,7 @@
   "required": ["user_id", "total_amount", "payment_method"],
   "properties": {
     "user_id": { "type": "string" },
-    "total_amount": { "type": "number", "minimum": 0 },
+    "total_amount": { "type": "string", "minimum": 0 },
     "currency": { "type": "string", "enum": ["EUR", "SEK"] },
     "payment_method": { "type": "string", "enum": ["card", "invoice"] }
   }
