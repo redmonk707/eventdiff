@@ -5,7 +5,7 @@
     "FIELD_ADDED_REQUIRED": "block",
     "FIELD_ADDED_OPTIONAL": "pass",
     "REQUIRED_BECOMES_REQUIRED": "block",
-    "REQUIRED_BECOMES_OPTIONAL": "warn",
+    "REQUIRED_BECOMES_OPTIONAL": "block",
     "TYPE_CHANGED": "block",
     "ENUM_VALUE_REMOVED": "block",
     "ENUM_VALUE_ADDED": "pass",
