@@ -3,7 +3,7 @@
   "title": "checkout_completed",
   "type": "object",
   "required": ["user_id", "total_amount","currency"],
- "properties": {
+  "properties": {
     "user_id": { "type": "string" },
     "total_amount": { "type": "number", "minimum": 0 },
     "currency": { "type": "string", "enum": ["EUR", "SEK"] },
