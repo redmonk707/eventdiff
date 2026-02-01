@@ -7,6 +7,7 @@
     "user_id": { "type": "string" },
     "total_amount": { "type": "number", "minimum": 0 },
     "currency": { "type": "string", "enum": ["EUR", "SEK"] },
-    "payment_method": { "type": "string", "enum": ["card", "invoice"] }
+    "payment_method": { "type": "string", "enum": ["card", "invoice"]
+"session_id": { "type": "string" }
   }
 }
