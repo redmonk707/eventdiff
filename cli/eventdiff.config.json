@@ -1,0 +1,26 @@
+{
+  "policy": {
+    "default": {
+      "FIELD_REMOVED_REQUIRED": "block",
+      "FIELD_REMOVED_OPTIONAL": "warn",
+      "FIELD_ADDED_REQUIRED": "block",
+      "FIELD_ADDED_OPTIONAL": "pass",
+      "REQUIRED_BECOMES_REQUIRED": "block",
+      "REQUIRED_BECOMES_OPTIONAL": "warn",
+      "TYPE_CHANGED": "block",
+      "ENUM_VALUE_REMOVED": "block",
+      "ENUM_VALUE_ADDED": "pass",
+      "FILE_REMOVED": "block",
+      "FILE_ADDED": "pass",
+      "INVALID_JSON": "block"
+    },
+    "overrides_by_owner": {
+      "team-payments-platform": {
+        "REQUIRED_BECOMES_OPTIONAL": "block"
+      },
+      "team-checkout": {
+        "REQUIRED_BECOMES_OPTIONAL": "warn"
+      }
+    }
+  }
+}

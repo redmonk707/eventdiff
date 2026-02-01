@@ -1,0 +1,4 @@
+{
+  "checkout_completed": ["team-checkout"],
+  "payment_authorized": ["team-payments-platform"]
+}

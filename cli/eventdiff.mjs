@@ -216,7 +216,7 @@ function diff(oldSchema, newSchema, ownerTeams) {
     if (a.required !== b.required) {
       changes.push({
         severity: !a.required && b.required ? sevForOwner("REQUIRED_BECOMES_REQUIRED", ownerTeams) : sevForOwner("REQUIRED_BECOMES_OPTIONAL", ownerTeams),
-        kind: "REQUIRED_CHANGED",
+        kind: !a.required && b.required ? "REQUIRED_BECOMES_REQUIRED" : "REQUIRED_BECOMES_OPTIONAL",
         path,
         message: !a.required && b.required
           ? `Optional → required: '${path}'.`
