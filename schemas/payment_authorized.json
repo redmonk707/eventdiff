@@ -8,5 +8,5 @@
     "total_amount": { "type": "number" },
     "auth_id": { "type": "string" }
   },
-  "required": ["user_id", "total_amount", "auth_id"]
+  "required": ["user_id", "total_amount"]
 }
