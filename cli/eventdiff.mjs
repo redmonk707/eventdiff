@@ -13,7 +13,7 @@ const args = Object.fromEntries(
 
 const base = args.base;
 const head = args.head;
-const dir = args.dir || "../schemas";;
+const dir = args.dir || "../schemas";
 const DEFAULT_POLICY = {
   FIELD_REMOVED_REQUIRED: "block",
   FIELD_REMOVED_OPTIONAL: "warn",
